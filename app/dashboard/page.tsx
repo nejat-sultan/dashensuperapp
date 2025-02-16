@@ -15,7 +15,7 @@ export default function Dashboard() {
   }
 
   return (
-    <div className="p-4 flex justify-center mt-10">
+    <div className="p-4 flex justify-center mt-10 bg-white">
       <div>
         <h1 className="text-2xl font-bold text-gray-800">
           Welcome, {session.user.fullname}
