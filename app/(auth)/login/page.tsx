@@ -105,7 +105,7 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row h-screen">
+    <div className="flex flex-col md:flex-row h-screen bg-white">
       <div className="w-full md:w-1/2 bg-[#151d68] flex items-center justify-center relative h-40 md:h-auto">
         <div className="absolute inset-0 bg-cover bg-center opacity-50" style={{ backgroundImage: "url('/wave.png')" }} />
         <div className="text-white text-center relative z-10">
@@ -151,7 +151,7 @@ export default function LoginPage() {
                   />
                   <button
                     type="submit"
-                    className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-[#151d68] text-white px-4 py-1 rounded"
+                    className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-[#151d68] text-white px-4 py-2 rounded"
                     disabled={isSubmitting} 
                   >
                     {isSubmitting ? 'Sending...' : 'Get OTP'}
@@ -180,7 +180,7 @@ export default function LoginPage() {
               </div>
               <button
                 onClick={handleVerifyOtp}
-                className="w-full mt-4 bg-[#151d68] text-white p-2 rounded"
+                className="w-full mt-4 bg-[#151d68] text-white p-4 rounded"
                 disabled={verifyOtpMutation.isPending}
               >
                 {verifyOtpMutation.isPending ? 'Verifying OTP...' : 'Next'}
@@ -207,7 +207,7 @@ export default function LoginPage() {
                   />
                   <button
                     type="submit"
-                    className="w-full bg-[#151d68] text-white p-2 rounded"
+                    className="w-full bg-[#151d68] text-white p-4 rounded"
                     disabled={isSubmitting || loading}
                   >
                     {loading ? 'Logging in...' : 'Login'}
