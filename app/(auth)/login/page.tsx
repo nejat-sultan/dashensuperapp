@@ -120,7 +120,7 @@ export default function LoginPage() {
             <Image src="/dashenbank.jpeg" alt="Dashen Bank Logo" width={150} height={150} />
           </div>
 
-          <h1 className="text-2xl font-bold text-center">Login</h1>
+          <h1 className="text-2xl font-bold text-center text-black">Login</h1>
           <p className="text-black text-center mt-2 mb-4">
             Welcome to Dashen Bank Dashboard!
           </p>
@@ -147,7 +147,7 @@ export default function LoginPage() {
                     name="username"
                     type="text"
                     placeholder="Username"
-                    className="w-full p-2 pr-20 border rounded"
+                    className="w-full p-2 pr-20 border rounded text-black"
                   />
                   <button
                     type="submit"
@@ -174,7 +174,7 @@ export default function LoginPage() {
                     value={digit}
                     maxLength={1}
                     onChange={(e) => handleOtpChange(index, e.target.value)}
-                    className="w-10 h-10 md:w-12 md:h-12 border border-[#151d68] rounded text-center text-lg md:text-xl"
+                    className="w-10 h-10 md:w-12 md:h-12 border border-[#151d68] rounded text-center text-lg md:text-xl text-black"
                   />
                 ))}
               </div>
@@ -203,7 +203,7 @@ export default function LoginPage() {
                     name="password"
                     type="password"
                     placeholder="Password"
-                    className="w-full p-2 border rounded"
+                    className="w-full p-2 border rounded text-black"
                   />
                   <button
                     type="submit"
